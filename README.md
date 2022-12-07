@@ -1,2 +1,0 @@
-# Proyecto 2022-02 ARSW PAPER MIND
-
