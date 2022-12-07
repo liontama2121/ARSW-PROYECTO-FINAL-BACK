@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Bibliotecas</title>
+
+<!-- Bootstrap CSS -->
+<link href="../static/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+	<div class="container">
+		<form action="#" th:action="@{/bibliotecas}" class="form-group" th:object=${biblioteca} method="post">
+			<br>
+			<div class="form-group">
+				<label for="nombre" class="form-label">Nombre</label>
+  				<input type="text" class="form-control" id="idnombre" name="nombre" placeholder="nombre">
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="fecha_creacion" class="form-label">Fecha Creación</label>
+  				<input type="datetime-local" class="form-control" id="idfecha_creacion" name="fecha_creacion" placeholder="fecha creacion">
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="fecha_modificacion" class="form-label">Fecha Modificación</label>
+  				<input type="datetime-local" class="form-control" id="idfecha_modificacion" name="fecha_modificacion" placeholder="fecha modificacion">
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="descripcion" class="form-label">Descripcion</label>
+  				<input type="text" class="form-control" id="iddescripcione" name="descripcion" placeholder="descripcion">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

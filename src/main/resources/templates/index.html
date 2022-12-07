@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Bibliotecas</title>
+
+<!-- Bootstrap CSS -->
+<link href="../static/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+    <div class="container">
+      <br>
+      <h2 th:if="${list == null} OR ${list.isEmpty()}">No hay Bibliotecas.</h2>
+    </div>
+</body>
+</html>
